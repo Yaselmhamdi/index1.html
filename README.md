@@ -31,5 +31,5 @@ Contraintes techniques
 Outils et languages pour la réalisation du projet
 Le projet à été réalisé en HTML5/CSS3, sans framework
 Contact
-Adresse e-mail :lyesharrar@gmail.com
+Adresse e-mail :yaselmhamdi@gmail.com
 Workplace
