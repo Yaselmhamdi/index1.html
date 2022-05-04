@@ -1,4 +1,4 @@
-/* desktop ( >992px) */
+/* desktop(1980px) */
 body { 
     box-sizing: border-box;
     max-width: 100%;
@@ -90,6 +90,11 @@ main {
     height: 50px;
     width: 50%;
 }
+section{
+    max-width: 1440px;
+    margin-inline: auto;
+    margin-top: 3%;
+  }
 .fa-location-dot {
     display: flex;
     width: 50px;
@@ -171,7 +176,7 @@ input:focus {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
@@ -203,7 +208,7 @@ input:focus {
     padding-left: 10px;
     font-size: 100%;
 }
-/* annimation filter part */
+/* animation filter part */
 .fa-money-bill-wave {
     transition: transform 1500ms;    
 }
@@ -221,7 +226,7 @@ input:focus {
 }
 .btn-3:hover .fa-heart {    
     transform: scale(1.5);
-    color: #e755ec;
+    color: blue;
 }
 .fa-dog {
     transition: transform 500ms;
@@ -434,7 +439,7 @@ input:focus {
 .activity__card {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1%;
     margin-bottom: 5%;    
 }
@@ -567,7 +572,7 @@ footer {
 .footer a:hover {
     color: #0065FC;
 }
-/* Media Queries Tablet (<992px) */
+/* Media Queries Tablet(992px) */
 @media screen and (max-width: 992px) {
     body {
         max-width: 992px;
@@ -627,7 +632,7 @@ footer {
     }
     
 }
-/* Media Queries phone (<768px) */
+/* Media Queries phone (768px) */
 @media screen and (max-width: 768px) {
     body {
         max-width: 768px;
