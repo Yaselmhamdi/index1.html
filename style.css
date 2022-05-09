@@ -84,6 +84,10 @@ main {
     margin-top: -0.5%;
     margin-bottom: 1%;
 }
+#search i,
+.info i{
+  display: flex;
+}
 .search__bar {
     display:flex;
     background: #fff;
@@ -605,7 +609,6 @@ footer {
         height: fit-content;
         margin-bottom: 5%;
         padding-bottom: 10%;
-        background: #fff;
     }
     .popularCard1, .popularCard2, .popularCard3 {
         width: 100%;
