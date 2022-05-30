@@ -1,1004 +1,341 @@
-/* desktop(993px) */
-body { 
-    box-sizing: border-box;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    margin-bottom: -50px;
-    font-family: 'Raleway', 'sans-serif';
-}
-
-main,
-header{
-  margin: auto;
-  max-width: 993px;
-}
-/* Header */
-#header {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-#booki {
-    display: flex;
-    width: auto;
-    height: auto;
-    right: 100px;
-    bottom: 50px
-}
-.menus {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 100%;
-    font-weight: 500;
-    font-family: 'Raleway', 'sans-serif';
-    
-    
-}
-.menus__accommodation {
-    color: #000;
-    border-top: 2px solid #fff;
-    text-decoration: none;
-    position: relative;
-    top: 0%;
-    left: 2%;
-    padding-top: 0%;
-    padding-left: 20%;
-    padding-right: 20%;  
-}
-.menus__accommodation:hover {
-    color: #0065FC;
-    border-color: #0065FC;
-}
-.menus__activity {
-    border-top: 2px solid #fff;
-    color: #000;
-    text-decoration: none;
-    position: relative;
-    top: 0%;
-    padding-top: 0%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.menus__activity:hover {
-    color: #0065FC;
-    border-color: #0065FC;
-}
-/* Section : #search */
-#search {
-    display: flex;
-    flex-direction: column;
-}
-#search, h1 {
-    font-size: 120%;
-    font-weight: 700;
-}
-#search, p {
-    font-weight: 500;
-    font-size: 100%;
-    margin-top: -0.5%;
-    margin-bottom: 1%;
-}
-#search i,
-.info i{
-  display: flex;
-}
-.search__bar {
-    display:flex;
-    background: #fff;
-    height: 50px;
-    width: 50%;
-}
-section{
-    max-width: 993px;
-    margin-inline: auto;
-    margin-top: 3%;
-  }
-.fa-location-dot {
-    display: flex;
-    width: 50px;
-    font-size: 100%;
-    align-items: center;
-    justify-content: center;
-    background: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-}
-.search__bar--input {
-    width: 225px;
-    border: 1px solid #F2F2F2;
-    color: #000;
-    padding-left: 10px;
-    font-size: 100%;
-    font-weight: 700;
-}
-input[type="text"]::placeholder {
-    color: #000;
-    opacity: 1;
-}
-input:focus {
-    outline: none;
-}
-.search__btn--desktop {
-    width: 140px;
-    background: #0065FC;
-    color: #fff;
-    border-radius: 0px 15px 15px 0px;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 100%;
-}
-.search__btn--mobile {
-    display: none;
-}
-/* Filter part */
-.filter, p {
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.filter__title {
-    font-weight: 700;
-    font-size: 100%;
-    margin-right: 30px;
-}
-.filter__nav {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    padding-inline-start: 2px;
-}
-.filter__btn {
-    border: 2px solid #F2F2F2;
-    border-left: 0;
-    height: 85%;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 100%;
-    color: #000;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding-right: 25px;
-    padding-left: 0px;
-    margin-right: 30px;
-}
-.filter__icon {
-    color :#0065FC;
-    font-size: 100%;
-    background: #DEEBFF;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-}
-.filter a:hover {
-    color: #0065FC;
-}
-.info {
-    display: flex;
-}
-.info__elements {
-    margin-left: 10px;
-    padding-bottom: 5%;
-    display:flex;
-    flex-flow: nowrap;
-    align-items: center;
-}
-.info__elements__icon {
-    color: #0065FC;
-    font-size: 100%;
-    border-radius: 20px;
-    border: 2px solid #F2F2F2;
-    height: 20px;
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -5%;
-}
-.info__elements__txt {
-    padding-left: 7px;
-    padding-bottom: 0%;
-    margin-bottom: -5%;
-    font-size: 100%;
-}
-/* animation filter part */
-.fa-money-bill-wave {
-    transition: transform 1500ms;    
-}
-.btn-1:hover .fa-money-bill-wave {    
-    transform: scale(1.5) rotate(360deg);
-}
-.fa-child-reaching {
-    transition: transform 500ms ease-in-out;
-}
-.btn-2:hover .fa-child-reaching {
-    transform: translateY(-10px) scale(1.5);
-}
-.fa-heart {
-    transition: transform 1500ms;
-}
-.btn-3:hover .fa-heart {    
-    transform: scale(1.5);
-    color: blue;
-}
-.fa-dog {
-    transition: transform 500ms;
-}
-.btn-4:hover .fa-dog {
-    transform: translateX(10px) scale(1.5);
-}
-/* section container part */
-#accommodation {
-    display: flex;
-    width: 100%;
-    height: 626;
-    gap: 10px;
-}
-#accommodation {
-    display: flex;
-}
-
-/* Accommodation part*/
-
-.accommodation h2 {
-    font-weight: 700;
-    font-size: 120%;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-
-.accommodation {
-    width: 66.66%;
-    margin-right: 2%;
-    background: #F2F2F2;
-    border-radius: 15px;
-    padding-right: 1.5px;
-}
-
-.accommodation__title {
-    font-weight: 700;
-    font-size: 140%;
-    margin-left: 5%;
-    margin-top: 0%;
-}
-
-/* Card accommodation part */
-
-.accommodationCard {
-    display: flex;
-     flex-wrap: wrap;
-     gap: 1em;
-     justify-content: space-around;
-     margin-bottom: 1em;
-     column-gap: 30px;
-     row-gap: 30px;
-     padding-right: 2%;
-     padding-left: 2%;
-     padding-top: 2%;
-   }
-
-.accommodationCard1 a, .accommodationCard2 a, .accommodationCard3 a, .accommodationCard4 a, .accommodationCard5 a, .accommodationCard6 a {
-    text-decoration: none;
-}
-.accommodationCard1, .accommodationCard2, .accommodationCard3, .accommodationCard4, .accommodationCard5, .accommodationCard6 {
-    width: 28%;
-    height: 210px;
-    margin-bottom: 3%;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
-    padding-top: 0.5%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-}
-
-.accommodationCard1__img, .accommodationCard2__img, .accommodationCard3__img, .accommodationCard4__img, .accommodationCard5__img, .accommodationCard6__img {
-    width: 100%;
-}
-
-.accommodationCard1__img img, .accommodationCard2__img img, .accommodationCard3__img img, .accommodationCard4__img img, .accommodationCard5__img img, .accommodationCard6__img img {
-  height: 110px;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-  box-shadow: 0 0 16px #0000002e;
-}
-
-.accommodationCard1__body, .accommodationCard2__body, .accommodationCard3__body, .accommodationCard4__body, .accommodationCard5__body, .accommodationCard6__body {
-    margin: 4%;
-}
-
-.accommodationCard1__title, .accommodationCard2__title, .accommodationCard3__title, .accommodationCard4__title, .accommodationCard5__title, .accommodationCard6__title {
-    font-weight: 700;
-    font-size: 80%;
-    color: #000;
-    margin-bottom: 5%;
-}
-
-.accommodationCard1__price, .accommodationCard2__price, .accommodationCard3__price, .accommodationCard4__price, .accommodationCard5__price, .accommodationCard6__price {
-    font-size: 90%;
-    color: #000;
-    margin-bottom: 5%;
-}
-
-.accommodationCard1__stars, .accommodationCard2__stars, .accommodationCard3__stars, .accommodationCard4__stars, .accommodationCard5__stars, .accommodationCard6__stars{
-    display: flex;
-    font-size: 70%;
-}
-
-.accommodationCard1__stars--active, .accommodationCard2__stars--active, .accommodationCard3__stars--active, .accommodationCard4__stars--active, .accommodationCard5__stars--active, .accommodationCard6__stars--active {
-    color: #0065FC;
-}
-
-.accommodationCard1__stars--inactive, .accommodationCard3__stars--inactive, .accommodationCard4__stars--inactive, .accommodationCard5__stars--inactive {
-    padding-left: 0.2%;
-    color: #F2F2F2;
-}
-
-.accommodation__seeMore {
-    margin-left: 5%;
-    margin-bottom: 5%;
-    font-weight: 700;
-    font-size: 100%;
-}
-.accommodation__seeMore, a {
-    text-decoration: none;
-    color: #000;
-}
-.accommodation__seeMore a:hover {
-    color: #0065FC;
-}
-
-/* Accommodation trans part */
-
-.accommodationCard1, .accommodationCard2, .accommodationCard3, .accommodationCard4, .accommodationCard5, .accommodationCard6 {
-    transition: transform 500ms;
-}
-
-.accommodationCard1:hover, .accommodationCard2:hover, .accommodationCard3:hover, .accommodationCard4:hover, .accommodationCard5:hover, .accommodationCard6:hover {
-    transform: scale(1.2);
-}
-
-/* asside part */
-
-.popular {
-    width: 33.33%;
-    background: #F2F2F2;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-
-.popular__title {
-    margin-top: 8%;
-    margin-right: 8%;
-    margin-left: 5%;
-    margin-bottom: 7.5%;
-    display: flex;
-    align-items:center;
-    top: auto;
-    font-size:small;
-}
-
-.popular h1 {
-    font-weight: 700;
-    font-size: 120%;
-}
-
-.fa-chart-line {
-    font-size: 120%;
-    margin: 0 0 0 45px;
-    right: 60px;
-}
-/* popularCard part */
-
-.popularCard {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    grid-template-rows: max-content 200px 1fr;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.popularCard1 a, .popularCard2 a, .popularCard3 a {
-    display: flex;
-    text-decoration: none;
-}
-
-.popularCard1, .popularCard2, .popularCard3 {
-    width: 370px;
-    height: 140px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
-    padding: 1%;
-    margin-bottom: 9%;
-}
-
-.popularCard1__img, .popularCard3__img {
-    width: 130px;
-    height: 140px;
-    margin-right: 15px;
-}
-
-.popularCard2__img {
-    width: 155px;
-    height: 140px;
-    margin-right: 15px;
-}
-
-.popularCard1__img img, .popularCard2__img img, .popularCard3__img img {
-    border-radius: 10px 0px 0px 10px;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.popularCard1__body, .popularCard2__body, .popularCard3__body {
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-.popularCard1__title, .popularCard2__title, .popularCard3__title {
-    font-weight: 700;
-    font-size: 100%;
-    width: 80%;
-    color: #000;
-}
-
-.popularCard1__price, .popularCard2__price, .popularCard3__price {
-    font-size: 85%;
-    color: #000;
-    margin-top: 5%;
-}
-
-.popularCard1__stars, .popularCard2__stars, .popularCard3__stars {
-    display: flex;
-    margin-top: 20%;
-    font-size: 70%;
-}
-
-.popularCard1__stars--active, .popularCard2__stars--active, .popularCard3__stars--active {
-    color: #0065FC;
-}
-
-
-.popularCard1__stars--inactive, .popularCard2__stars--inactive, .popularCard3__stars--inactive {
-    color: #F2F2F2;
-    margin-left: 1.5px;
-}
-
-/* Popular part Transition */
-
-.popularCard1, .popularCard2, .popularCard3 {
-    transition: transform 500ms;
-}
-
-.popularCard1:hover, .popularCard2:hover, .popularCard3:hover {
-    transform: scale(1.2);
-}
-
-/* Activity part */
-#activity {
-    display: flex;
-    margin-top: 3%;
-    flex-flow: column;
-    justify-content: space-between;
-}
-.activity h2 {
-    font-weight: 700;
-    font-size: 120%;
-    padding-top: 1%;
-    padding-bottom: -20%;
-}
-/* Activity card part */
-
-.activity__card {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -5%;
-    margin-bottom: 5%;    
-    flex-direction: row;
-    gap: 20px;
-    padding: 5%;
-}
-
-.activity__largeCard1__body, .activity__largeCard2__body {
-    width: 100%;
-    height: 475px;    
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;    
-    border-radius: 0px 0px 20px 20px;
-}
-
-.activity__largeCard1__body--img, .activity__largeCard2__body--img {
-    width: 100%;
-    height: 415px;
-    overflow: hidden;    
-    border-radius: 20px 20px 0px 0px;
-
-}
-
-.activity__largeCard1__body--img img, .activity__largeCard2__body--img img {
-    object-fit: cover;
-    width: 100%;
-    height: 475px;
-}
-
-.activity__largeCard1__body--title, .activity__largeCard2__body--title, .activity__smallCard1__A__body--title, .activity__smallCard1__B__body--title, .activity__smallCard2__A__body--title, .activity__smallCard2__B__body--title{
-    margin-top: 7%;
-    margin-left: 10%;
-    font-weight: 700;
-}
-
-.activity__smallCard1__A__body {
-    width: 100%;
-    height: 250px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;    
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 20%;
-    
-}
-
-.activity__smallCard1__A__body--img {
-    width: 100%;
-    height: 190px;
-    overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.activity__smallCard1__A__body--img img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-}
-
-
-.activity__smallCard1__B__body {
-    width: 100%;
-    padding-bottom: 3%;
-    margin-top: 20%;
-    top: 3%;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
-    flex-direction: row;
-    right: 300px;
-    bottom: 5%;
-}
-
-.activity__smallCard1__B__body--img {
-    width: 100%;
-    height: 170px;
-    overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.activity__smallCard1__B__body--img img {
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-}
-
-.activity__smallCard2__A__body {
-    width: 100%;
-    height: 190px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
-    border-radius: 0px 0px 20px 20px;    
-    margin-bottom: 15%;
-    flex-direction: row;
-    right: 300px;
-}
-
-.activity__smallCard2__A__body--img {
-    width: 100%;
-    height: 135px;
-    overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.activity__smallCard2__A__body--img img {
-    object-fit: cover;
-    width: 100%;
-    height: 190px;
-    margin-bottom: 20%;
-}
-
-.activity__smallCard2__B__body {
-    width: 100%;
-    height: 210px;
-    box-shadow: rgba(0, 0, 0, 0.20) 20px 20px 20px -20px;
-    border-radius: 0px 0px 20px 20px; 
-    margin-top: 20%;  
-}
-
-.activity__smallCard2__B__body--img {
-    width: 100%;
-    height: 210px;
-    overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.activity__smallCard2__B__body--img img {
-    object-fit: cover;
-    width: 100%;
-    height: 240px;
-}
-
-.activity__largeCard1, .activity__largeCard2, .activity__smallCard1__A, .activity__smallCard1__B, .activity__smallCard2__A, .activity__smallCard2__B {
-    transition: transform 500ms;
-}
-
-.activity__largeCard1:hover, .activity__largeCard2:hover, .activity__smallCard1__A:hover, .activity__smallCard1__B:hover, .activity__smallCard2__A:hover, .activity__smallCard2__B:hover {
-    transform: scale(1.2);
-}
-
-/* footer part */
-footer {
-    background:#F2F2F2;
-    width:100%;   
-}
-.footer ul {
-    display: flex;
-    list-style: none;
-    padding-inline-start: 0;
-}
-.footer__allBlock {
-    width: 100%;
-    justify-content: space-evenly;
-}
-.footer__firstBlock {   
-    padding-left: 5%;
-}
-.footer li, h3 {
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 15px;
-}
-.footer li ul {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-}
-.footer a:hover {
-    color: #0065FC;
-}
-/* Media Queries Tablet(992px) */
-@media screen and (max-width: 992px) {
-    body {
-        max-width: 992px;
-    }
-    main {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-/* Header tablet part */
-    #header {
-        max-width: 992px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-/* Accommodation tablet part */
-.menus__accommodation {
-    color: #000;
-    border-top: 2px solid #fff;
-    text-decoration: none;
-    position: relative;
-    top: 0%;
-    left: 2%;
-    padding-top: -20%;
-    padding-left: 10%;
-    padding-right: 10%;  
-}
-    #accommodation {
-        justify-content: space-between;
-    }
-    .accommodation {
-        margin: auto;
-        width: 55%;
-    }
-    .accommodation__title {
-        margin-left: 5%;
-        margin-top: 0%;
-    }
-/*Popular tablet part */
-    .popular {
-        top: 20px;
-        position: sticky;
-        border-radius: 0px;
-        width: 40%;
-        height: fit-content;
-        margin-bottom: 5%;
-        padding-bottom: 10%;
-    }
-    .popularCard1, .popularCard2, .popularCard3 {
-        width: 100%;
-    }
-    .popularCard2__img {
-        width: 195px;
-    }
-/*Activity tablet part */
-    .activity__title {
-        margin-bottom: 2%;
-    }
-    .activity__card {
-        justify-content: space-around;
-    }
-    .activity__largeCard1 {
-        margin-bottom: 6%;
-    }
-/* footer tablet part */
-    .footer__allBlock {
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .footer__firstBlock {
-        padding-left: 7%;
-    }
-    
-}
-/* Media Queries phone (768px) */
-@media screen and (max-width: 768px) {
-    body {
-        max-width: 768px;
-    }
-    main {
-        max-width: 740px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #header {
-        flex-direction: column;
-        align-items: center;
-        max-width: 768px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-/*logo phone part */
-    
-    #logo {        
-        justify-content: center;
-        width: 135px;
-        height: 135px;
-        margin-bottom: 20%;
-    }
-    #logo img {
-        width: 135px;
-        height: 135px;
-    }
-/* Nav phone part */
-    .menus {
-        width: 110%;
-        margin-top: 10%;
-    }
-    .menus__accommodation {
-        width: 50%;
-        padding-bottom: 2%;
-        text-align: center;
-        border-top: none;
-        border-bottom: 4px solid #F2F2F2;
-    }
-    .menus__accommodation:focus {
-        border-bottom: 4px solid #0065FC;
-    }
-    .menus__activity {
-        width: 50%;
-        padding-bottom: 2%;
-        text-align: center;
-        border-top: none;
-        border-bottom: 4px solid #F2F2F2;
-    }
-    .menus__activity:hover {
-        border-top: none;
-    }
-    .menus__activity:focus {
-        border-bottom: 4px solid #0065FC;
-    }
-    
-/*search Bar phone part */
-    .search {
-        margin-left: 5%;
-    }
-    .search__bar {
-        margin-top: 10%;
-        width: 100%;
-    }
-    .search__bar--input {
-        border-right: none;
-    }
-    .search__btn--glass {
-        display: flex;
-        width: 50px;
-        font-weight: 700;
-        font-size: 100%;
-        align-items: center;
-        justify-content: center;
-        background: #0065FC;
-        border-radius: 15px 15px 15px 15px;        
-        color: #fff;
-        position: relative;
-        left: -2%;
-    }
-    .search__btn--mobile {
-        display: contents;
-    }
-    .search__btn--desktop {
-        display: none;
-    }
-    .info__elements {
-        margin-bottom: 30px;
-    }
-    .info__elements__icon {
-        height: 25px;
-        width: 30px;
-    }
-    
-    .fa-money-bill-wave {
-        transition: transform 200ms;    
-    }
-    .btn-1:hover .fa-money-bill-wave {    
-        transform: none;
-    }
-    .btn-1:focus .fa-money-bill-wave {    
-        transform: scale(1.5) rotate(360deg);
-    }
-    .fa-child-reaching {
-        transition: transform 200ms ease-in-out;
-    }
-    
-    .btn-2:hover .fa-child-reaching {
-        transform: none;
-    }
-    .btn-2:focus .fa-child-reaching {
-        transform: translateY(-10px) scale(1.5);
-    }
-    .fa-heart {
-        transition: transform 200ms;
-    }
-    
-    .btn-3:hover .fa-heart {    
-        transform: none;
-        color: #0065FC;
-    }
-    .btn-3:focus .fa-heart {    
-        transform: scale(1.5);
-        color: #e755ec;
-    }
-    .fa-dog {
-        transition: transform 200ms;
-    }
-    
-    .btn-4:hover .fa-dog {
-        transform: none;
-    }
-    .btn-4:focus .fa-dog {
-        transform: translateX(10px) scale(1.5);
-    }
-/* accommodation phone part */    
-    #accommodation {
-        width: 320px;
-        margin: auto;
-        flex-direction: column;
-    }
-    
-    .accommodation {
-        width: 320px;
-        order: 2;
-        background: #fff;  
-    }
-    .accommodationCard1, .accommodationCard2, .accommodationCard3, .accommodationCard4, .accommodationCard5, .accommodationCard6 {
-        width: 320px;
-        height: 100%;
-        padding-top: 1.5%;
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-    }
-    .accommodationCard1 img, .accommodationCard2 img, .accommodationCard3 img, .accommodationCard4 img, .accommodationCard5 img, .accommodationCard6 img {
-        width: 100%;
-    }
-    .accommodation__seeMore{
-        margin-top: 8%;
-    }
-    .accommodationCard1:hover, .accommodationCard2:hover, .accommodationCard3:hover, .accommodationCard4:hover, .accommodationCard5:hover, .accommodationCard6:hover {
-        transform: none;
-    }
-    /* Popular phone part */
-    .popular {
-        position: static;        
-        border-radius: 0px;
-        width: 110%;
-        order: 1;
-        margin-left: 5%;        
-        margin-right: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-bottom: 5%;
-        padding-bottom: 10%;
-        background: #F2F2F2;
-    }
-    .popularCard1, .popularCard2, .popularCard3 {
-        width: 85%;
-    }
-    .popularCard2__img {
-        width: 195px;
-    }
-    .popularCard1:hover, .popularCard2:hover, .popularCard3:hover {
-        transform: none;
-    }
-    /* Activity phone part */
-    #activity {
-        margin: auto;
-        width: 320px;
-    }
-    .activity__title {
-        margin-top: 20%;
-        margin-bottom: 15%;
-    }
-    .activity__card {
-        width: 320px;
-        justify-content: center;
-        flex-flow: column wrap;
-    }
-    .activity__largeCard1__body, .activity__largeCard2__body, .activity__smallCard1__A__body, .activity__smallCard2__A__body {
-        width: 320px;
-        height: 220px;
-        margin-bottom: 8%;
-    }
-    .activity__smallCard1__B__body, .activity__smallCard2__B__body {
-        width: 320px;
-        height: 200px;
-        margin-bottom: 8%;
-    }
-    .activity__largeCard1__body--img, .activity__largeCard2__body--img, .activity__smallCard1__A__body--img, .activity__smallCard1__B__body--img, .activity__smallCard2__A__body--img, .activity__smallCard2__B__body--img {
-        width: 100%;
-        height: 160px;        
-    }
-    .activity__largeCard1__body--img img, .activity__largeCard2__body--img img, .activity__smallCard1__A__body--img img, .activity__smallCard1__B__body--img img, .activity__smallCard2__A__body--img img, .activity__smallCard2__B__body--img img {
-        width: 100%;
-        height: 200px;        
-    }
-    .activity__largeCard1:hover, .activity__largeCard2:hover, .activity__smallCard1__A:hover, .activity__smallCard1__B:hover, .activity__smallCard2__A:hover, .activity__smallCard2__B:hover {
-        transform: none;
-    }
-    /* Footer phone part */
-    .footer__allBlock {
-        flex-flow: column;
-        padding-top: 8%;
-        margin-left: 13%;
-        background:#F2F2F2;
-        width:100%; 
-        min-height:400px;  
-    }
-    .footer__firstBlock {
-        padding-left: 0px;
-    }
-    .footer li, h3 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-    .footer li ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-    }
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <title>Booki</title>
+  <script src="https://kit.fontawesome.com/3ae3e48013.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+      <!-- Logo -->
+      <img id="booki" src="img/images/logo/Booki.png" alt="logo" />
+      <nav class="menus">
+        <a href="#accommodation" class="menus__accommodation"><span>Hébergements</span></a>
+        <a href="#activity" class="menus__activity"><span>Activités</span></a>              
+    </nav>
+    </header>
+    <main>
+  <section>
+      <section id="search">
+          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+              <p class="search__subtitle">En plein centre ville ou en pleine nature</p>
+              <form class="search__bar">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input class="search__bar--input" type="text" name="Rechercher" placeholder="Marseille, France">
+                  <button class="search__btn--desktop">Rechercher</button>
+                  <button class="search__btn--mobile"><i class="search__btn--glass fa-solid fa-magnifying-glass"></i></button>
+              </form>
+              </section>
+    <div class="mobileFiltreWrap filtre margfiltre">
+    </div>
+    <!-- filtre-->
+  <div class="filter">
+  <p class="filter__title">Filtres</p>
+  <ul class="filter__nav">                         
+      <li><a class="filter__btn btn-1" href="#"><i class= "filter__icon fa-solid fa-money-bill-wave"></i>Economique</a></li>                        
+      <li><a class="filter__btn btn-2" href="#"><i class="filter__icon fa-solid fa-child-reaching"></i>Familial</a></li>                        
+      <li><a class="filter__btn btn-3" href="#"><i class="filter__icon fa-solid fa-heart"></i>Romantique</a></li>                        
+      <li><a class="filter__btn btn-4" href="#"><i class="filter__icon fa-solid fa-dog"></i>Animaux autorisés</a></li>
+  </ul>
+</div>
+<div class="info">
+  <div class="info__elements">
+      <i class="info__elements__icon fas fa-info"></i>
+      <p class="info__elements__txt"> Plus de 500 logements sont disponibles dans cette ville</p>
+  </div>
+</div>
+</section>
+ 
+<!--corps 1 card-->
+
+<div id="accommodation">
+    <article class="accommodation">
+        <h2>Hébergements à Marseille</h2>
+        <div class="accommodationCard">
+            <div class="accommodationCard1">
+                <a href="#">
+                    <div class="accommodationCard1__img"><img src="./img/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_Auberge_La_Cannebière"></div>
+                    <div class="accommodationCard1__body">
+                        <div class="accommodationCard1__title">Auberge La Cannebière</div>
+                        <div class="accommodationCard1__price">Nuit à partir de <strong>25€</strong></div>
+                        <div class="accommodationCard1__stars">
+                           <div class="accommodationCard1__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="accommodationCard1__stars--inactive">
+                                <i class="fa-solid fa-star"></i>    
+                           </div> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accommodationCard2">
+                <a href="#">
+                    <div class="accommodationCard2__img"><img src="./img/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo_Hotel_du_port"></div>
+                    <div class="accommodationCard2__body">
+                        <div class="accommodationCard2__title">Hôtel du port</div>
+                        <div class="accommodationCard2__price">Nuit à partir de <strong>52€</strong></div>
+                        <div class="accommodationCard2__stars">
+                        <div class="accommodationCard2__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>  
+                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accommodationCard3">
+                <a href="#">
+                    <div class="accommodationCard3__img"><img src="./img/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_Hotel_les_mouettes"></div>
+                    <div class="accommodationCard3__body">
+                        <div class="accommodationCard3__title">Hôtel Les mouettes</div>
+                        <div class="accommodationCard3__price">Nuit à partir de <strong>76€</strong></div>
+                        <div class="accommodationCard3__stars">
+                        <div class="accommodationCard3__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="accommodationCard3__stars--inactive">
+                                <i class="fa-solid fa-star"></i>    
+                        </div> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accommodationCard4">
+                <a href="#">
+                    <div class="accommodationCard4__img"><img src="img/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo_Hotel_de_la_mer"></div>
+                    <div class="accommodationCard4__body">
+                        <div class="accommodationCard4__title">Hôtel de la mer</div>
+                        <div class="accommodationCard4__price">Nuit à partir de <strong>46€</strong></div>
+                        <div class="accommodationCard4__stars">
+                        <div class="accommodationCard4__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="accommodationCard4__stars--inactive">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>    
+                        </div> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accommodationCard5">
+                <a href="#">
+                    <div class="accommodationCard5__img"><img src="img/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo_Auberge_Le_Panier"></div>
+                    <div class="accommodationCard5__body">
+                        <div class="accommodationCard5__title">Auberge Le Panier</div>
+                        <div class="accommodationCard5__price">Nuit à partir de <strong>23€</strong></div>
+                        <div class="accommodationCard5__stars">
+                        <div class="accommodationCard5__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="accommodationCard5__stars--inactive">
+                                <i class="fa-solid fa-star"></i>    
+                        </div> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accommodationCard6">
+                <a href="#">
+                    <div class="accommodationCard6__img"><img src="img/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_Hotel_chez_Amina"></div>
+                    <div class="accommodationCard6__body">
+                        <div class="accommodationCard6__title">Hôtel chez Amina</div>
+                        <div class="accommodationCard6__price">Nuit à partir de <strong>96€</strong></div>
+                        <div class="accommodationCard6__stars">
+                        <div class="accommodationCard6__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>                                        
+                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> 
+        <div class="accommodation__seeMore">
+            <span><a href="#">Afficher plus</a></span>
+        </div>  
+      </article> 
+      <!--fin de corps 1-->
+      <!--populaires-->
+      <article class="popular">
+        <div class="popular__title">
+            <h2>Les plus populaires</h2>
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="popularCard">
+            <div class="popularCard1">
+                <a href="#">
+                    <div class="popularCard1__img"><img src="img/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_hebergement_populaire1"></div>
+                    <div class="popularCard1__body">
+                        <div class="popularCard1__title">Hôtel Le soleil du matin</div>
+                        <div class="popularCard1__price">Nuit à partir de <strong>128€</strong></div>
+                        <div class="popularCard1__stars">
+                            <div class="popularCard1__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="popularCard2">
+                <a href="#">
+                    <div class="popularCard2__img"><img src="img/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_hebergement_populaire2"></div>
+                    <div class="popularCard2__body">
+                        <div class="popularCard2__title">Au c&#x153;ur de l'eau Chambres d'hôtes</div>
+                        <div class="popularCard2__price">Nuit à partir de <strong>71€</strong></div>
+                        <div class="popularCard2__stars">
+                            <div class="popularCard2__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="popularCard2__stars--inactive">
+                                    <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="popularCard3">
+                <a href="#">
+                    <div class="popularCard3__img"><img src="img/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_hebergement_populaire3"></div>
+                    <div class="popularCard3__body">
+                        <div class="popularCard3__title">Hôtel Tout bleu et Blanc</div>
+                        <div class="popularCard3__price">Nuit à partir de <strong>68€</strong></div>
+                        <div class="popularCard3__stars">
+                            <div class="popularCard3__stars--active">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="popularCard3__stars--inactive">
+                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>     
+   </article>
+</div>
+
+<section id="activity">
+    <h2>Activités à Marseille</h2>
+    <div class="activity__card">
+        <div class="activity__largeCard1">
+            <div class="activity__largeCard1__body">
+                <a href="#">
+                    <div class="activity__largeCard1__body--img"><img src="img/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo_vieux_port"></div>
+                    <div class="activity__largeCard1__body--title">Vieux Port</div>
+                </a>
+            </div>
+        </div>
+        <div class="activity__smallCard1">
+            <div class="activity__smallCard1__A">
+                <div class="activity__smallCard1__A__body">
+                    <a href="#">
+                        <div class="activity__smallCard1__A__body--img"><img src="img/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_Fort_de_pomegues"></div>
+                        <div class="activity__smallCard1__A__body--title">Fort de Pomègues</div>
+                    </a>
+                </div>
+            </div>
+            <div class="activity__smallCard1__B">
+                <div class="activity__smallCard1__B__body">
+                    <a href="#">
+                        <div class="activity__smallCard1__B__body--img"><img src="img/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo_ile_du_frioul"></div>
+                        <div class="activity__smallCard1__B__body--title">Île du Frioul</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="activity__largeCard2">
+            <div class="activity__largeCard2__body">
+                <a href="#">
+                    <div class="activity__largeCard2__body--img"><img src="img/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo_par_national_des_calanques"></div>
+                    <div class="activity__largeCard2__body--title">Parc national des Calanques</div>
+                </a>
+            </div>
+        </div>
+        <div class="activity__smallCard2">
+    <div class="activity__smallCard2__A">
+        <div class="activity__smallCard2__A__body">
+            <a href="#">
+                <div class="activity__smallCard2__A__body--img"><img src="img/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo_notre_dame_de_la_garde"></div>
+                <div class="activity__smallCard2__A__body--title">Notre-Dame-de-la-Garde</div>
+            </a>
+        </div>
+    </div>
+    <div class="activity__smallCard2__B">
+        <div class="activity__smallCard2__B__body">
+            <a href="#">
+                <div class="activity__smallCard2__B__body--img"><img src="img/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo_parc_longchamp"></div>
+                <div class="activity__smallCard2__B__body--title">Parc Longchamp</div>
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+</section>            
+</main>
+<!--footer-->
+<footer>
+  <nav class="footer">
+      <ul class="footer__allBlock">
+          <li class="footer__firstBlock">
+              <div y="1666" width="1440" height="225" ></div>
+              <h3>A propos</h3>
+              <ul>
+                  <li><a href="#">Fonctionnement du site</a></li>
+                  <li><a href="#">Conditions générales de vente</a></li>
+                  <li><a href="#">Données et confidentialité</a></li>
+              </ul>
+          </li>
+          <li>
+              <h3>Nos hébergements</h3>
+              <ul>
+                  <li><a href="#">Charte qualité</a></li>
+                  <li><a href="#">Soumettre votre hôtel</a></li>
+              </ul>
+          </li>
+          <li>
+              <h3>Assistance</h3>
+              <ul>
+                  <li><a href="#">Centre d'aide</a></li>
+                  <li><a href="#">Nous contacter</a></li>
+              </ul>
+          </li>                
+      </ul>
+  </nav>
+</footer>
+</body>
+</html>
